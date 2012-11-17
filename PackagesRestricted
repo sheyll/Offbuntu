@@ -1,0 +1,666 @@
+Package: avm-fritz-firmware
+Priority: optional
+Section: restricted/misc
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: avm-fritz-firmware-2.6.24-16
+Filename: pool/restricted/l/linux-meta/avm-fritz-firmware_2.6.24.16.18_amd64.deb
+Size: 26358
+MD5sum: 1738b51b49bf401dbbf0ced433fb2981
+SHA1: b3c3a91140ac6355d41abe797d4519a611150a11
+SHA256: ef400a4b06d5078b0caabe82fa905ed129a94f32d144c416579ee52be115528e
+Description: Firmware for AVM Fritz! ISDN hardware
+ This package will always depend on the firmware package for the latest
+ complete Linux kernel available.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: avm-fritz-firmware-2.6.24-16
+Priority: optional
+Section: restricted/misc
+Installed-Size: 1084
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 3.11+2.6.24.12-16.34
+Depends: capiutils (>= 1:3.6.2005-01-03-3ubuntu1)
+Recommends: drdsl
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/avm-fritz-firmware-2.6.24-16_3.11+2.6.24.12-16.34_amd64.deb
+Size: 484294
+MD5sum: c5b099e63027126f57c61a008b6331aa
+SHA1: 55c9c9f1782e208978f96d6a1e78c6558c99f8e1
+SHA256: 6a7349bb068c901b3ab06a32e44550d64414bde1b257c9a74a22f38f294c47f1
+Description: Firmware for AVM Fritz! ISDN hardware
+ This package contains firmware binaries needed for various Fritz! ISDN cards
+ made by AVM.  The firmware is installed in a kernel specific directory to
+ match driver and firmware version, if more than one kernel installed.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: avm-fritz-kernel-source
+Priority: optional
+Section: restricted/misc
+Installed-Size: 2212
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 3.11+2.6.24.12-16.34
+Depends: debhelper (>> 4.0.0), dpatch (>= 2.0.0), make, sed (>> 3.0)
+Recommends: devscripts, kernel-package (>= 8.082)
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/avm-fritz-kernel-source_3.11+2.6.24.12-16.34_amd64.deb
+Size: 2140676
+MD5sum: cac64e13117a792546eefd8aaf69a4c5
+SHA1: 44a2cfa6f95852870dd96fd9ca58646cf929ae9f
+SHA256: 8f8dfc8170b9efba89cdf7a5e0c2c4fdc0b50540ee21f4851ef8f18f3fc120d4
+Description: AVM Fritz! binary kernel module source
+ This package builds the binary kernel modules needed for the AVM FRITZ!
+ ISDN hardware.  This package is not needed on an Ubuntu system because
+ a pre-compiled kernel module is supplied by the linux-restricted-modules
+ packages.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: drdsl
+Priority: optional
+Section: restricted/base
+Installed-Size: 144
+Maintainer: Matthias Klose <doko@debian.org>
+Architecture: amd64
+Version: 1.2.0-1
+Depends: libc6 (>= 2.4-1), capiutils, libcapi20-dev
+Filename: pool/restricted/d/drdsl/drdsl_1.2.0-1_amd64.deb
+Size: 30980
+MD5sum: f34dfa664f6f24b8778bfb16b9fd9622
+SHA1: 56a7e255d215676066e885096146723837d7c26d
+SHA256: 5957557c74b1f664cf3fcf4561950b8d68d9e10b26b0b699c33a878f5a75e3cb
+Description: DSL Assistant for AVM DSL/ISDN-Controllers
+ The drdsl utility is used to determine the DSL configuration
+ parameters for AVM DSL/ISDN-Controllers.
+ .
+ The package contains the binary of the drdsl utility
+ as distributed from ftp.avm.de.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: fglrx-amdcccle
+Priority: optional
+Section: restricted/misc
+Installed-Size: 80
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24
+Version: 2.6.24.12-16.34
+Depends: fglrx-control
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/fglrx-amdcccle_2.6.24.12-16.34_amd64.deb
+Size: 37430
+MD5sum: e6491de93f647f857c48475d1be69940
+SHA1: 96570790c52e698bb5b353497a6b52329ab7561b
+SHA256: 792afa38095e7d95ad04853477a2d5f0106a82addaf9f450f6cd93de037298f4
+Description: Dummy package for easy transition
+ This is a dummy package for easy transition with ATI's packages.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: fglrx-control
+Priority: optional
+Section: restricted/x11
+Installed-Size: 9740
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 1:8-3+2.6.24.12-16.34
+Replaces: xorg-driver-fglrx (<< 1:7.1.0-7-11+2.6.24.5-4.12)
+Depends: libc6 (>= 2.3.2), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.3.5), libgl1-mesa | libgl1, libice6 (>= 1:1.0.0), libsm6, libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxi6, libxrandr2 (>= 2:1.2.0), libxrender1, xorg-driver-fglrx
+Conflicts: xorg-driver-fglrx (<< 1:7.1.0-7-11+2.6.24.5-4.12)
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/fglrx-control_8-3+2.6.24.12-16.34_amd64.deb
+Size: 5284220
+MD5sum: 4e36afe09425995e38dd06c5fc30b8a7
+SHA1: 06f1b06d549080d87b3256e77589d40f32a03572
+SHA256: e57593792e3c995604c6f6772d911ff8a07d11798bbc4267abdd93e883dd9590
+Description: Control panel for the ATI graphics accelerators
+ Control panel for the ATI Radeon and FireGL graphics accelerators.
+ .
+ This package provides the control panel compiled for Qt3.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-image (= 2.6.24.16.18), linux-restricted-modules (= 2.6.24.16.18)
+Filename: pool/restricted/l/linux-meta/linux_2.6.24.16.18_amd64.deb
+Size: 26328
+MD5sum: 1006d536a06d624823aa5dbe62892a86
+SHA1: 8be6e2283b3cccbef6ecf9abb3d3f487a3ec5025
+SHA256: 6823fc32d3f22d5517a3b452c43e46c1b31da28c2c635080ca4a5940b8e86ab5
+Description: Generic complete Linux kernel.
+ This package will always depend on the latest generic complete Linux kernel
+ available.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-amd64-generic
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-generic
+Filename: pool/restricted/l/linux-meta/linux-amd64-generic_2.6.24.16.18_amd64.deb
+Size: 26290
+MD5sum: f0fdac6667d439507f9c4784f4544ed7
+SHA1: 5a9b62084659bb3ed97be04720a685a735e7f8b8
+SHA256: 04763b2a07ff77dad08cbaeb101d55e8ac1fcedae068a0d96e4b4460f4b48d1a
+Description: Upgrade dummy package. Can be removed
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-amd64-k8
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-generic
+Filename: pool/restricted/l/linux-meta/linux-amd64-k8_2.6.24.16.18_amd64.deb
+Size: 26284
+MD5sum: c3d1ea3736f0fffc47dbdc584fee4be8
+SHA1: c35327b2a453d1d941c8675e403e0a301a3e0355
+SHA256: 200bbec6dfa223da767867bc90dfbfbefb9101e44c23ad2304d91a1dc2d140af
+Description: Upgrade dummy package. Can be removed
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-amd64-server
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-server
+Filename: pool/restricted/l/linux-meta/linux-amd64-server_2.6.24.16.18_amd64.deb
+Size: 26292
+MD5sum: b1610501797880238d1421be71105417
+SHA1: 41b0c022f3466beeab124f14794f6ec134f112e1
+SHA256: 0bdb00afcb5c40349ac6ff66be6f5f2c363cd105b2697803bba7b53eff9b1974
+Description: Upgrade dummy package. Can be removed
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-amd64-xeon
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-generic
+Filename: pool/restricted/l/linux-meta/linux-amd64-xeon_2.6.24.16.18_amd64.deb
+Size: 26292
+MD5sum: 632234d845056a0fbdf51f0ad0d45f32
+SHA1: 577d4999e5abe9e2957f06cde48d35eb30772d0b
+SHA256: 334ec6c31cb6312bbde13a4a1f08483dc180a811409c03fdc7e70779a90e9c18
+Description: Upgrade dummy package. Can be removed
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-generic
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-image-generic (= 2.6.24.16.18), linux-restricted-modules-generic (= 2.6.24.16.18)
+Filename: pool/restricted/l/linux-meta/linux-generic_2.6.24.16.18_amd64.deb
+Size: 26342
+MD5sum: ffec03b869a849cea8e60bec21954bb0
+SHA1: 823d987bf5199001a76be47215016378ef7c3f2c
+SHA256: a82076820f4c544f599d1e9df1d10928c2a7d6db7019d7f02ba2ff74ed4a3d6c
+Description: Complete Generic Linux kernel
+ This package will always depend on the latest complete generic Linux kernel
+ available.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-restricted-modules
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-restricted-modules-generic (= 2.6.24.16.18)
+Filename: pool/restricted/l/linux-meta/linux-restricted-modules_2.6.24.16.18_amd64.deb
+Size: 26338
+MD5sum: 525851b9d27e1bec02b29ea46b5d773b
+SHA1: 4c340200c680f8b77244093aba582922c7748fcb
+SHA256: fbfc3e3051ccd4011c239afaf27f824e871c1d219a4bfa34b59f61b08f8908c6
+Description: Generic Linux restricted modules.
+ This package will always depend on the latest generic Linux restricted
+ modules available.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-restricted-modules-2.6.24-16-generic
+Priority: optional
+Section: restricted/misc
+Installed-Size: 52436
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24
+Version: 2.6.24.12-16.34
+Provides: nvidia-kernel-169.12, nvidia-kernel-71.86.04, nvidia-kernel-96.43.05
+Depends: linux-image-2.6.24-16-generic, linux-restricted-modules-common (>= 2.6.24), module-init-tools, nvidia-kernel-common
+Suggests: avm-fritz-firmware-2.6.24-16, nvidia-glx | nvidia-glx-legacy | nvidia-glx-new
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/linux-restricted-modules-2.6.24-16-generic_2.6.24.12-16.34_amd64.deb
+Size: 14888980
+MD5sum: 4dc4ceab8ce85aaea73ce152469023ea
+SHA1: 7acd6276b60c37c5b64e5828776ab018f466620a
+SHA256: dcd65db3b378c24555c3753e5fcc6fea7d0a07c48ed87637bafcf3f87d62cb6e
+Description: Non-free Linux 2.6.24 modules on x86/x86_64
+ This package provides restricted modules for Linux version 2.6.24 on
+ x86/x86_64.
+ .
+ Currently the following modules are included:
+  - madwifi (Atheros)
+  - fglrx (ATI)
+  - nvidia
+  - fcdsl2, fcdslsl, fcdslslusb, fcdslusb, fcdslusb2, fcpci (AVM ISDN)
+  - fcdsl, fcdslusba, fcusb, fwlanusb, fxusb (AVM ISDN x86 only)
+ .
+ These modules are "restricted" because they are not available under a
+ completely Free licence.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-restricted-modules-2.6.24-16-server
+Priority: optional
+Section: restricted/misc
+Installed-Size: 52604
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24
+Version: 2.6.24.12-16.34
+Provides: nvidia-kernel-169.12, nvidia-kernel-71.86.04, nvidia-kernel-96.43.05
+Depends: linux-image-2.6.24-16-server, linux-restricted-modules-common (>= 2.6.24), module-init-tools, nvidia-kernel-common
+Suggests: avm-fritz-firmware-2.6.24-16, nvidia-glx | nvidia-glx-legacy | nvidia-glx-new
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/linux-restricted-modules-2.6.24-16-server_2.6.24.12-16.34_amd64.deb
+Size: 14889416
+MD5sum: 7247e61b505447b447b1d581d92ce2bd
+SHA1: 482b9a49c5f1ffeb8c9aec4a3b1f5d708fd725fe
+SHA256: 6d3364001ba6011bab371367f8a98a6b402b6b39461284ee98dc6860f9ec7b2a
+Description: Non-free Linux 2.6.24 modules on x86/x86_64
+ This package provides restricted modules for Linux version 2.6.24 on
+ x86/x86_64.
+ .
+ Currently the following modules are included:
+  - madwifi (Atheros)
+  - fglrx (ATI)
+  - nvidia
+  - fcdsl2, fcdslsl, fcdslslusb, fcdslusb, fcdslusb2, fcpci (AVM ISDN)
+  - fcdsl, fcdslusba, fcusb, fwlanusb, fxusb (AVM ISDN x86 only)
+ .
+ These modules are "restricted" because they are not available under a
+ completely Free licence.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-restricted-modules-amd64-generic
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-restricted-modules-generic
+Filename: pool/restricted/l/linux-meta/linux-restricted-modules-amd64-generic_2.6.24.16.18_amd64.deb
+Size: 26318
+MD5sum: 83c6167b866e258c6c8a505a1f164471
+SHA1: 7703fb5e1a291563c5dfbda6706ba8c80b160964
+SHA256: 37b9243aeacbe9f7674ca3e4dcad4720903c86bf8007918e17463176ed41516d
+Description: Upgrade dummy package. Can be removed
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-restricted-modules-amd64-k8
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-restricted-modules-generic
+Filename: pool/restricted/l/linux-meta/linux-restricted-modules-amd64-k8_2.6.24.16.18_amd64.deb
+Size: 26314
+MD5sum: 73f7eee2824a24219fa6eb0221c4be15
+SHA1: 41864e45f3979a61f9c94b8ba6704b9240ba6ab3
+SHA256: 1a8624eb2061234f31cd508cae1f2f1c4b0b5736bbc4790faa93cb0e7c79efe1
+Description: Upgrade dummy package. Can be removed
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-restricted-modules-amd64-xeon
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-restricted-modules-generic
+Filename: pool/restricted/l/linux-meta/linux-restricted-modules-amd64-xeon_2.6.24.16.18_amd64.deb
+Size: 26316
+MD5sum: 0f08bde1ccfff9e974fe71725ed7383d
+SHA1: 64423038bef8591fe92e1f6d41303fca0ea8b576
+SHA256: 60e9ef8ec5f06ad285f4676dd99bf10a85ac4f2571fcb8bb402f5c1a9b81b67e
+Description: Upgrade dummy package. Can be removed
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-restricted-modules-common
+Priority: optional
+Section: restricted/misc
+Installed-Size: 100
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: all
+Source: linux-restricted-modules-2.6.24
+Version: 2.6.24.12-16.34
+Depends: binutils-static
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/linux-restricted-modules-common_2.6.24.12-16.34_all.deb
+Size: 27632
+MD5sum: 5f088f5e79aa3810ed01a4151804a42e
+SHA1: 829273d3172b4f1e6b13d7bdde65b3f7b5a15089
+SHA256: e01b5d378bad119f97b21c9b1a7e61938a63e12731568464cb41c9878914843c
+Description: Non-free Linux 2.6.24 modules helper script
+ This package provides only a set of helper scripts to handle
+ linux-restricted-modules.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-restricted-modules-generic
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-restricted-modules-2.6.24-16-generic
+Filename: pool/restricted/l/linux-meta/linux-restricted-modules-generic_2.6.24.16.18_amd64.deb
+Size: 26352
+MD5sum: 48c4b77fef8d6bc00ee931f93650bed5
+SHA1: 4b3d3d8e0e3588d2568481c04485d0892efadb08
+SHA256: 386d43efc255fd45868dff7892a7e02ff9167ec023558d6ca6002d2802acd96e
+Description: Restricted Linux modules for generic kernels
+ This package will always depend on the latest restricted modules available
+ for generic kernels.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-server
+Priority: optional
+Section: restricted/metapackages
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-meta
+Version: 2.6.24.16.18
+Depends: linux-image-server (= 2.6.24.16.18)
+Filename: pool/restricted/l/linux-meta/linux-server_2.6.24.16.18_amd64.deb
+Size: 26340
+MD5sum: 6324860c4c8fb0836dd2cea59fb8f2b0
+SHA1: 4856e5d2b078564d966e26d292f799c0d859235a
+SHA256: f8d570515121354cc3010e04af2d10f7be5011070a7922142a7c648878db3754
+Description: Complete Linux kernel on Server Equipment.
+ This package will always depend on the latest complete Linux kernel available
+ for Server Equipment.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: nvidia-glx
+Priority: optional
+Section: restricted/x11
+Installed-Size: 21832
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 1:96.43.05+2.6.24.12-16.34
+Replaces: nvidia-glx-src
+Provides: xserver-xorg-video-2
+Depends: libc6 (>= 2.3), libgl1-mesa | libgl1, libglu1-mesa | libglu1, libx11-6, libxext6, linux-restricted-modules-common, xserver-xorg-core (>= 1:0.99.0-1)
+Suggests: nvidia-kernel-source (>= 96.43.05), nvidia-settings
+Conflicts: nvidia-glx-legacy, nvidia-glx-new, nvidia-glx-src, nvidia-xconfig
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/nvidia-glx_96.43.05+2.6.24.12-16.34_amd64.deb
+Size: 7332114
+MD5sum: fa31e2e21571db54310abad276eae9ea
+SHA1: 46e458a589e80d9a401b7a4d0f543ccc0b26422a
+SHA256: 37aa70b08bf1dd6771fe165c1553ecbcde327dcc6163a3e0e1a7d574d82c54a8
+Description: NVIDIA binary XFree86 4.x/X.Org driver
+ These XFree86 4.x/X.Org binary drivers provide optimized hardware acceleration
+ of OpenGL applications via a direct-rendering X Server and support the newer
+ GeForce, nForce and Quadro families of NVIDIA chipsets.  AGP, TV-out and
+ flat panel displays are also supported.
+ .
+ If you have a TNT, TNT2, or older GeForce, you may need the nvidia-glx-legacy
+ package instead of this one.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: nvidia-glx-dev
+Priority: optional
+Section: restricted/devel
+Installed-Size: 888
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 1:96.43.05+2.6.24.12-16.34
+Depends: libgl1-mesa-dev | libgl-dev, libglu1-mesa-dev | libglu-dev, nvidia-glx (>= 96.43.05)
+Conflicts: nvidia-glx-legacy-dev, nvidia-glx-new-dev
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/nvidia-glx-dev_96.43.05+2.6.24.12-16.34_amd64.deb
+Size: 183474
+MD5sum: d31a5682fd7c1349d4cb45243bb9ad05
+SHA1: 163e2313458874910f9d8b88b490bde4ede67f52
+SHA256: bd6ebbd4d8543201c897609b68cc38e937a34c80fb7d4cdd05529c51f292fb52
+Description: NVIDIA binary XFree86 4.x/X.Org driver development files
+ This package contains the NVIDIA binary XFree86 4.x/X.Org driver
+ development files.
+ .
+ For more information on this source package visit NVIDIA's homepage
+ at http://www.nvidia.com/ .
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: nvidia-glx-new
+Priority: optional
+Section: restricted/misc
+Installed-Size: 27632
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 169.12+2.6.24.12-16.34
+Replaces: nvidia-glx-src
+Provides: nvidia-glx, xserver-xorg-video-2
+Depends: libc6 (>= 2.3), libgl1-mesa | libgl1, libglu1-mesa | libglu1, libx11-6, libxext6, linux-restricted-modules-common, xserver-xorg-core (>= 1:0.99.0-1)
+Suggests: nvidia-new-kernel-source (>= 169.12), nvidia-settings
+Conflicts: nvidia-glx, nvidia-glx-legacy, nvidia-glx-src, nvidia-xconfig
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/nvidia-glx-new_169.12+2.6.24.12-16.34_amd64.deb
+Size: 9370294
+MD5sum: ff3eaf864d7b239029ed8e3239123a43
+SHA1: 4d216147923e69442b97a007303011d179ed54e1
+SHA256: 540662ec19e90150a42f85dce4da057cd35beaa7805a4f6fb56e0cfba7f2e046
+Description: NVIDIA binary XFree86 4.x/X.Org 'new' driver
+ These XFree86 4.x/X.Org binary drivers provide optimized hardware acceleration
+ of OpenGL applications via a direct-rendering X Server and supports the  newer
+ GeForce, nForce and Quadro families of NVIDIA chipsets.  AGP, TV-out and
+ flat panel displays are also supported.
+ .
+ If you have a TNT, TNT2, or older GeForce, you may need the nvidia-glx-legacy
+ package instead of this one. If you have a GeForce4, you may need the nvidia-glx
+ package.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: nvidia-glx-new-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 840
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 169.12+2.6.24.12-16.34
+Depends: libgl1-mesa-dev | libgl-dev, libglu1-mesa-dev | libglu-dev, nvidia-glx-new (>= 169.12)
+Conflicts: nvidia-glx-dev, nvidia-glx-legacy-dev
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/nvidia-glx-new-dev_169.12+2.6.24.12-16.34_amd64.deb
+Size: 171484
+MD5sum: d24a5b668d891350f6f8a951955a2e1e
+SHA1: d7e90bab15a3be9adfe5936c349724227a9a12d5
+SHA256: dc9709d1fba51470bb1600348d2204c373476905c47b8dbf0a0871f97074d2f9
+Description: NVIDIA binary XFree86 4.x/X.Org 'new' driver development files
+ This package contains the NVIDIA binary XFree86 4.x/X.Org 'new' driver
+ development files.
+ .
+ This is the 'new' driver for newer chipsets.  Unless your chipset is
+ explicitly listed in the nvidia-glx-new description, please use the
+ nvidia-glx driver, which is more compatible.
+ .
+ For more information on this source package visit NVIDIA's homepage
+ at http://www.nvidia.com/ .
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: nvidia-kernel-common
+Priority: optional
+Section: restricted/x11
+Installed-Size: 112
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Randall Donald <rdonald@debian.org>
+Architecture: all
+Version: 20051028+1ubuntu8
+Depends: modutils | module-init-tools, sysv-rc (>= 2.86.ds1-14.1ubuntu2)
+Filename: pool/restricted/n/nvidia-kernel-common/nvidia-kernel-common_20051028+1ubuntu8_all.deb
+Size: 5478
+MD5sum: 3536eaa6d8895242b2c0fbca4febb406
+SHA1: 324bf54c1fe52f7b4fd580dd3a6c518573d7dd02
+SHA256: 06579b5aa56c3e5a246efaaad0bbea9c078488d25b7e715a2da342c5a4a748f7
+Description: NVIDIA binary kernel module common files
+ This package contains files shared between nvidia module
+ packages.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: nvidia-new-kernel-source
+Priority: optional
+Section: restricted/misc
+Installed-Size: 2964
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 169.12+2.6.24.12-16.34
+Replaces: nvidia-kernel-source, nvidia-kernel-src
+Provides: nvidia-kernel-source
+Depends: debhelper (>> 4.0.0), dpatch (>= 2.0.0), make, sed (>> 3.0)
+Recommends: devscripts, kernel-package (>= 8.082), nvidia-glx-new (>= 169.12)
+Conflicts: nvidia-kernel-source, nvidia-kernel-src, nvidia-legacy-kernel-source
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/nvidia-new-kernel-source_169.12+2.6.24.12-16.34_amd64.deb
+Size: 2845172
+MD5sum: c2832bacea5aba3ef631cf71e24c6e86
+SHA1: d0daa80f95937783d70d96cf26d0ebaf7b0b0be5
+SHA256: b510cea6320f604c3cbed1e2ef68a4dbec779aa8dfad8caf8460f894133ac24e
+Description: NVIDIA binary 'new' kernel module source
+ This package builds the NVIDIA XFree86 4.x/X.Org binary kernel module needed
+ by nvidia-glx.  This package is not needed on an Ubuntu system because
+ a pre-compiled kernel module is supplied by the linux-restricted-modules
+ packages.
+ .
+ This is the 'new' driver for older chipsets.  Unless your chipset is
+ explicitly listed in the nvidia-glx-new description, please use the
+ nvidia-glx driver, which is more compatible.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: xorg-driver-fglrx
+Priority: optional
+Section: restricted/misc
+Installed-Size: 44680
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 1:7.1.0-8-3+2.6.24.12-16.34
+Replaces: fglrx-driver, xfree86-driver-fglrx
+Provides: fglrx-driver, xserver-xorg-video-2
+Depends: libc6 (>= 2.3.2), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.3.5), libgl1-mesa | libgl1, libice6 (>= 1:1.0.0), libsm6, libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxi6, libxrandr2 (>= 2:1.2.0), libxrender1, linux-restricted-modules-common, xserver-xorg-core (>= 1:0.99.0-1)
+Conflicts: fglrx-driver, nvidia-glx, nvidia-glx-legacy, xfree86-driver-fglrx
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/xorg-driver-fglrx_7.1.0-8-3+2.6.24.12-16.34_amd64.deb
+Size: 14562992
+MD5sum: e4e41c9d25663d22b507a906788b0d18
+SHA1: 2c0c3deb6b9b3aeeadd3dc97fd41f72ae617f226
+SHA256: 009c7b3015172e2de7557774892c8e4822286c35321c41345de1e7789cf07ab2
+Description: Video driver for ATI graphics accelerators
+ Video driver for the ATI Radeon and FireGL graphics accelerators.
+ .
+ This version of the ATI driver officially supports:
+ .
+  * FireGL: V8650, V8600, V7600, V7350, V7300, V7200, V7100,
+            V5600, V5200, V5100, V5000, HD3870, HD3850, V3600, V3400,
+            V3300, V3200, V3100, X3-256, X3, X2-256, Z1-128, T2-128,
+            X1-128, X1-256p
+  * FireMV: 2200 (Single card PCI-e configuration)
+  * Mobility FireGL: V5000, T2
+  * Mobility Radeon: X1800, X1600, X1400, X1300, X800, X700, X600, X300,
+                     X200, 9800, 9600, 9550, 9500
+  * Radeon Xpress: 1200 series, 1100 series, 200 series
+  * Radeon: HD2900, HD2600, HD2400, X1900, X1800, X1600, X1300, X850,
+            X800, X700, X600, X550, X300, 9800, 9700, 9600, 9550, 9500
+ .
+ ATI All-in-Wonder variants of the above cards/chips are also supported,
+ but video capture is not.
+ .
+ This package provides 2D display drivers and hardware accelerated OpenGL.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: xorg-driver-fglrx-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 384
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-restricted-modules-2.6.24 (2.6.24.12-16.34)
+Version: 1:7.1.0-8-3+2.6.24.12-16.34
+Replaces: fglrx-driver-dev, xfree86-driver-fglrx-dev
+Provides: fglrx-driver-dev
+Depends: xorg-driver-fglrx (= 1:7.1.0-8-3+2.6.24.12-16.34)
+Conflicts: fglrx-driver-dev, xfree86-driver-fglrx-dev
+Filename: pool/restricted/l/linux-restricted-modules-2.6.24/xorg-driver-fglrx-dev_7.1.0-8-3+2.6.24.12-16.34_amd64.deb
+Size: 77562
+MD5sum: 04c145e64cf120cda3caf9f2a9751c2c
+SHA1: d080a1b05f4b104bca3e227980c1984732fc56b0
+SHA256: a2761a5d5cd030ce1d8de212007131a100a01338176f13df1118b1ed7541431d
+Description: Video driver for ATI graphics accelerators (devel files)
+ Video driver for the ATI Radeon and FireGL graphics accelerators.
+ .
+ This package provides definitions for the GL and GLX extensions
+ and the FGLRXGAMMA extension interface library.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
